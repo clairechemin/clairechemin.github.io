@@ -347,12 +347,6 @@
           'supports-touch': 'screen and (pointer: coarse)',
         },
       };
-      window.Shopify = {
-        designMode: false,
-        routes: {
-          root: '/',
-        },
-      };
     </script>
     <script data-keep="">
       if (!(HTMLScriptElement.supports && HTMLScriptElement.supports('importmap'))) {
@@ -806,7 +800,7 @@
         ></x-header>
       </height-observer>
 
-      <script>
+      <script data-keep="">
         document.documentElement.style.setProperty(
           '--header-height',
           `${Math.round(document.getElementById('shopify-section-sections--27417083773275__header').clientHeight)}px`
