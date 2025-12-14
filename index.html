@@ -48,28 +48,6 @@
       ]
     </script>
     <style>
-      @font-face {
-        font-family: 'Instrument Sans';
-        font-weight: 400;
-        font-style: normal;
-        font-display: fallback;
-        src:
-          url('//claire-chemin.myshopify.com/cdn/fonts/instrument_sans/instrumentsans_n4.db86542ae5e1596dbdb28c279ae6c2086c4c5bfa.woff2')
-            format('woff2'),
-          url('//claire-chemin.myshopify.com/cdn/fonts/instrument_sans/instrumentsans_n4.510f1b081e58d08c30978f465518799851ef6d8b.woff')
-            format('woff');
-      }
-      @font-face {
-        font-family: 'Instrument Sans';
-        font-weight: 400;
-        font-style: italic;
-        font-display: fallback;
-        src:
-          url('//claire-chemin.myshopify.com/cdn/fonts/instrument_sans/instrumentsans_i4.028d3c3cd8d085648c808ceb20cd2fd1eb3560e5.woff2')
-            format('woff2'),
-          url('//claire-chemin.myshopify.com/cdn/fonts/instrument_sans/instrumentsans_i4.7e90d82df8dee29a99237cd19cc529d2206706a2.woff')
-            format('woff');
-      }
       :root {
         /* Container */
         --container-max-width: 100%;
@@ -122,7 +100,7 @@
      */
 
         /* Font properties */
-        --subheading-font-family: 'Instrument Sans', sans-serif;
+        --subheading-font-family: Helvetica, Arial, sans-serif;
         --subheading-font-weight: 400;
         --subheading-font-style: normal;
         --subheading-font-size: 0.8125rem;
@@ -356,6 +334,12 @@
           'motion-reduce': '(prefers-reduced-motion: reduce)',
           'supports-hover': 'screen and (pointer: fine)',
           'supports-touch': 'screen and (pointer: coarse)',
+        },
+      };
+      window.Shopify = {
+        designMode: false,
+        routes: {
+          root: '/',
         },
       };
     </script>
@@ -809,7 +793,7 @@
         ></x-header>
       </height-observer>
 
-      <script data-keep="">
+      <script>
         document.documentElement.style.setProperty(
           '--header-height',
           `${Math.round(document.getElementById('shopify-section-sections--27417083773275__header').clientHeight)}px`
@@ -1310,7 +1294,7 @@
             <div class="section-stack">
               <div class="section-header">
                 <div class="prose prose-justify-left">
-                  <h2 id="shopify-block-ASzU3M0FHT25FSHdzZ__section-header" class="h3 sm:h2">Multi-column</h2>
+                  <h2 id="shopify-block-ASzU3M0FHT25FSHdzZ__section-header" class="h3 sm:h2">Multi-columns</h2>
                   <div class="max-w-md">
                     <p>Use this content to share information about your store and products.</p>
                   </div>
