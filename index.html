@@ -1,0 +1,1475 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0"
+    />
+
+    <title>Claire Chemin</title>
+    <link rel="canonical" href="https://www.clairechemin.fr/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Claire Chemin" />
+    <meta property="og:url" content="https://www.clairechemin.fr/" />
+    <meta property="og:site_name" content="Claire Chemin" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Claire Chemin" />
+    <meta name="twitter:description" content="Claire Chemin" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.clairechemin.fr"
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Claire Chemin",
+          "url": "https:\/\/claire-chemin.myshopify.com"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Claire Chemin",
+          "sameAs": ["https:\/\/www.instagram.com\/xhmn\/", "https:\/\/www.linkedin.com\/in\/claire-chemin\/"],
+          "url": "https:\/\/claire-chemin.myshopify.com"
+        }
+      ]
+    </script>
+    <style>
+      @font-face {
+        font-family: 'Instrument Sans';
+        font-weight: 400;
+        font-style: normal;
+        font-display: fallback;
+        src:
+          url('//claire-chemin.myshopify.com/cdn/fonts/instrument_sans/instrumentsans_n4.db86542ae5e1596dbdb28c279ae6c2086c4c5bfa.woff2')
+            format('woff2'),
+          url('//claire-chemin.myshopify.com/cdn/fonts/instrument_sans/instrumentsans_n4.510f1b081e58d08c30978f465518799851ef6d8b.woff')
+            format('woff');
+      }
+      @font-face {
+        font-family: 'Instrument Sans';
+        font-weight: 400;
+        font-style: italic;
+        font-display: fallback;
+        src:
+          url('//claire-chemin.myshopify.com/cdn/fonts/instrument_sans/instrumentsans_i4.028d3c3cd8d085648c808ceb20cd2fd1eb3560e5.woff2')
+            format('woff2'),
+          url('//claire-chemin.myshopify.com/cdn/fonts/instrument_sans/instrumentsans_i4.7e90d82df8dee29a99237cd19cc529d2206706a2.woff')
+            format('woff');
+      }
+      :root {
+        /* Container */
+        --container-max-width: 100%;
+        --container-gutter: 1rem;
+        --container-gutter-mobile: 1rem;
+        --distance-to-bleed-container: max(var(--container-gutter), 50% - var(--container-max-width) / 2);
+
+        --container-xs: 26.5rem;
+        --container-sm: 36rem;
+        --container-md: 48rem;
+        --container-lg: 60rem;
+        --container-xl: 68rem;
+        --container-2xl: 78rem;
+
+        /* Spacing */
+        --spacing: 0.25rem;
+        --section-vertical-spacing: 2.5rem;
+        --section-stack-row-gap: 2rem;
+        --section-boxed-spacing: var(--container-gutter);
+
+        /* Form settings */
+        --form-gap: 1rem; /* Gap between fieldset and submit button */
+        --fieldset-gap: 0.5rem; /* Gap between each form input within a fieldset */
+        --form-control-gap: 0.5rem; /* Gap between input and label (ignored for floating label) */
+        --checkbox-control-gap: 0.75rem; /* Horizontal gap between checkbox and its associated label */
+        --input-padding-block: 0.65rem; /* Vertical padding for input, textarea and native select */
+        --input-padding-inline: 1rem; /* Horizontal padding for input, textarea and native select */
+        --checkbox-size: 0.875rem; /* Size (width and height) for checkbox */
+
+        /* Product listing gaps */
+        --product-list-column-gap: 0px;
+
+        --product-list-row-gap: 0px; /* Other sizes */
+        --header-group-height: calc(
+          var(--announcement-bar-height, 0px) + var(--countdown-condensed-height, 0px) + var(--header-height, 0px)
+        );
+        --sticky-area-height: calc(
+          var(--announcement-bar-is-sticky, 0) * var(--announcement-bar-height, 0px) + var(--header-is-sticky, 0) *
+            var(--header-height, 0px)
+        );
+        --sticky-offset: calc(
+          var(--announcement-bar-is-sticky, 0) * var(--announcement-bar-height, 0px) + var(--header-is-sticky, 0) *
+            var(--header-is-visible, 1) * var(--header-height, 0px)
+        );
+
+        /**
+     * ---------------------------------------------------------------------
+     * TYPOGRAPHY
+     * ---------------------------------------------------------------------
+     */
+
+        /* Font properties */
+        --subheading-font-family: 'Instrument Sans', sans-serif;
+        --subheading-font-weight: 400;
+        --subheading-font-style: normal;
+        --subheading-font-size: 0.8125rem;
+        --subheading-text-transform: uppercase;
+        --subheading-letter-spacing: 0em;
+        --heading-font-family: Helvetica, Arial, sans-serif;
+        --heading-font-weight: 400;
+        --heading-font-style: normal;
+        --heading-text-transform: uppercase;
+        --heading-letter-spacing: 0em;
+        --heading-line-height: 1;
+        --heading-italic-font-family: ;
+        --heading-italic-font-weight: ;
+        --heading-italic-font-size-multiplier: %;
+        --text-font-family: Helvetica, Arial, sans-serif;
+        --text-font-weight: 400;
+        --text-font-style: normal;
+        --text-transform: none;
+        --text-letter-spacing: 0em;
+        --text-line-height: 1.4;
+        --text-font-medium-weight: 500;
+        --text-font-bold-weight: 700;
+        --button-font: var(--text-font-style) var(--text-font-weight) var(--button-font-size) / normal
+          var(--text-font-family);
+        --button-text-transform: uppercase;
+        --button-letter-spacing: 0em;
+
+        /* Font sizes */
+        --text-heading-size-factor: 0.8;
+        --text-h1: max(2.5rem, clamp(3rem, 2.3325rem + 2.8479vw, 5.75rem) * var(--text-heading-size-factor));
+        --text-h2: max(2rem, clamp(2.5rem, 1.9539rem + 2.3301vw, 4.75rem) * var(--text-heading-size-factor));
+        --text-h3: max(1.75rem, clamp(2rem, 1.6359rem + 1.5534vw, 3.5rem) * var(--text-heading-size-factor));
+        --text-h4: max(1.5rem, clamp(1.75rem, 1.4466rem + 1.2945vw, 3rem) * var(--text-heading-size-factor));
+        --text-h5: max(1.25rem, clamp(1.375rem, 1.2233rem + 0.6472vw, 2rem) * var(--text-heading-size-factor));
+        --text-h6: max(1rem, clamp(1.1875rem, 1.1117rem + 0.3236vw, 1.5rem) * var(--text-heading-size-factor));
+        --text-h7: max(0.75rem, clamp(1rem, 0.9545rem + 0.1942vw, 1.1875rem) * var(--text-heading-size-factor));
+        --text-xs: 0.6875rem;
+        --text-sm: 0.75rem;
+        --text-base: 0.875rem;
+        --text-lg: 1.0625rem;
+        --button-font-size: 0.75rem;
+
+        /* Rounded variables (used for border radius) */
+        --subheading-border-radius: 0rem;
+        --button-border-radius: 0rem;
+        --input-border-radius: 0rem;
+
+        /* Product card variables */
+        --product-card-row-count: 2;
+
+        /**
+     * ---------------------------------------------------------------------
+     * OTHER
+     * ---------------------------------------------------------------------
+     */
+
+        --icon-stroke-width: 1px;
+        --quotation-mark-svg: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" focusable="false" width="62" fill="none" viewBox="0 0 62 57"><path fill="%23000" d="M.79 31.904 11.924.816h12.296l-8.12 31.088h7.888V56.96H.79V31.904Zm37.351 0L49.277.816h12.064l-8.12 31.088h7.888V56.96H38.141V31.904Z" /></svg>');
+      }
+      :root {
+        --font-weight-bold: 700;
+
+        --radius-full: 9999px;
+        --radius-xs: 0rem;
+        --radius-sm: 0rem;
+        --radius-lg: 0rem;
+        --radius-xl: 0rem;
+        --radius-2xl: 0rem;
+
+        --default-background: 255 255 255;
+      }
+
+      @media screen and (min-width: 700px) {
+        :root {
+          --text-xs: 0.6875rem;
+          --text-sm: 0.75rem;
+          --text-base: 0.875rem;
+          --text-lg: 1.0625rem;
+          --subheading-font-size: 0.875rem;
+
+          /* Spacing */
+          --container-gutter: 2rem;
+
+          /* Form settings */
+          --form-gap: 1.25rem; /* Gap between fieldset and submit button */
+          --fieldset-gap: 0.75rem; /* Gap between each form input within a fieldset */
+          --input-padding-block: 0.75rem; /* Vertical padding for input, textarea and native select */
+
+          /* Font sizes */
+          --button-font-size: 0.8125rem;
+
+          /* Product listing gaps */
+          --product-list-column-gap: 0px;
+          --product-list-row-gap: 0px;
+        }
+      }
+
+      @media screen and (min-width: 1000px) {
+        :root {
+          /* Spacing settings */
+          --section-vertical-spacing: 3.5rem;
+          --section-stack-row-gap: 3rem;
+        }
+      }
+
+      @media screen and (min-width: 1399px) {
+        :root {
+          /* Spacing settings */
+          --section-vertical-spacing: 4.5rem;
+          --container-gutter: 3rem;
+        }
+      }
+
+      /**
+   * ---------------------------------------------------------------------
+   * COLORS
+   * ---------------------------------------------------------------------
+   */
+
+      :root {
+        --page-overlay: 0 0 0 / 0.4;
+        --dialog-backdrop-blur: 2px;
+
+        /* Status colors */
+        --success-background: 227 240 232;
+        --success-text: 22 131 66;
+        --warning-background: 253 241 224;
+        --warning-text: 237 138 0;
+        --error-background: 251 224 224;
+        --error-text: 224 0 0;
+
+        /* Product colors */
+        --on-sale-text: 250 63 63;
+        --on-sale-badge-background: 250 63 63;
+        --on-sale-badge-text: 255 255 255;
+        --sold-out-badge-background: 50 30 30;
+        --sold-out-badge-text: 255 255 255;
+        --custom-badge-background: 255 255 255;
+        --custom-badge-text: 0 0 0;
+        --star-color: 246 164 41;
+      }
+      .color-scheme--scheme-1 {
+        --accent: 0 0 0;
+        --background: 255 255 255;
+        --background-gradient: ;
+        --background-secondary: 250 244 240;
+        --has-transparent-background: 0;
+        --has-filled-background: 1;
+        --text-color: 0 0 0;
+        --border-color: 230 230 230; /* Button colors */
+        --button-background-primary: 0 0 0;
+        --button-text-primary: 255 255 255;
+
+        /* Form inputs */
+        --input-background: 255 255 255;
+        --input-text-color: 0 0 0;
+        --input-text-transform: none;
+      }
+      .color-scheme--scheme-2 {
+        --accent: 255 255 255;
+        --background: 0 0 0 / 0;
+        --background-gradient: ;
+        --background-secondary: 240 240 240;
+        --has-transparent-background: 1;
+        --has-filled-background: 0;
+        --text-color: 255 255 255;
+        --border-color: 255 255 255 / 0.6; /* Button colors */
+        --button-background-primary: 255 255 255;
+        --button-text-primary: 8 9 18;
+
+        /* Form inputs */
+        --input-background: 255 255 255;
+        --input-text-color: 3 3 5;
+        --input-text-transform: none;
+      }
+      .color-scheme--scheme-3 {
+        --accent: 255 255 255;
+        --background: 0 0 0;
+        --background-gradient: ;
+        --background-secondary: 255 255 255;
+        --has-transparent-background: 0;
+        --has-filled-background: 1;
+        --text-color: 255 255 255;
+        --border-color: 26 26 26; /* Button colors */
+        --button-background-primary: 255 255 255;
+        --button-text-primary: 0 0 0;
+
+        /* Form inputs */
+        --input-background: 0 0 0;
+        --input-text-color: 255 255 255;
+        --input-text-transform: none;
+      }
+    </style>
+    <script data-keep="">
+      // This allows to expose several variables to the global scope, to be used in scripts
+      window.themeVariables = {
+        settings: {
+          pageType: 'index',
+          moneyFormat: '€{{amount_with_comma_separator}}',
+          moneyWithCurrencyFormat: '€{{amount_with_comma_separator}} EUR',
+          currencyCodeEnabled: false,
+          cartType: 'page',
+          staggerProducts: true,
+        },
+
+        strings: {
+          addedToCart: '{{product_title}} was added to cart',
+          closeGallery: 'Close gallery',
+          zoomGallery: 'Zoom',
+          errorGallery: 'Image cannot be loaded',
+          shippingEstimatorNoResults: 'Sorry, we do not ship to your address.',
+          shippingEstimatorOneResult: 'There is one shipping rate for your address:',
+          shippingEstimatorMultipleResults: 'There are several shipping rates for your address:',
+          shippingEstimatorError: 'One or more error occurred while retrieving shipping rates:',
+          next: 'Next',
+          previous: 'Previous',
+        },
+
+        mediaQueries: {
+          sm: 'screen and (min-width: 700px)',
+          md: 'screen and (min-width: 1000px)',
+          lg: 'screen and (min-width: 1150px)',
+          xl: 'screen and (min-width: 1400px)',
+          '2xl': 'screen and (min-width: 1600px)',
+          'max-sm': 'screen and (max-width: 699px)',
+          'max-md': 'screen and (max-width: 999px)',
+          'max-lg': 'screen and (max-width: 1149px)',
+          'max-xl': 'screen and (max-width: 1399px)',
+          'max-2xl': 'screen and (max-width: 1599px)',
+          'motion-safe': '(prefers-reduced-motion: no-preference)',
+          'motion-reduce': '(prefers-reduced-motion: reduce)',
+          'supports-hover': 'screen and (pointer: fine)',
+          'supports-touch': 'screen and (pointer: coarse)',
+        },
+      };
+    </script>
+    <script data-keep="">
+      if (!(HTMLScriptElement.supports && HTMLScriptElement.supports('importmap'))) {
+        const importMapPolyfill = document.createElement('script');
+        importMapPolyfill.async = true;
+        importMapPolyfill.src =
+          '//claire-chemin.myshopify.com/cdn/shop/t/7/assets/es-module-shims.min.js?v=30534491423352870471765714781';
+
+        document.head.appendChild(importMapPolyfill);
+      }
+    </script>
+
+    <script
+      type="module"
+      src="//claire-chemin.myshopify.com/cdn/shop/t/7/assets/vendor.min.js?v=149317703429685268631765714786"
+      data-keep=""
+    ></script>
+    <script
+      type="module"
+      src="//claire-chemin.myshopify.com/cdn/shop/t/7/assets/main.min.js?v=140373562450231123111765714783"
+      data-keep=""
+    ></script>
+
+    <link
+      href="//claire-chemin.myshopify.com/cdn/shop/t/7/assets/main.css?v=23630978561917830371765714782"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <script data-keep="">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('consent', 'default', {
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        wait_for_update: 100,
+      });
+    </script>
+  </head>
+
+  <body class="features--zoom-image color-scheme color-scheme--scheme-1">
+    <template id="drawer-default-template">
+      <div part="base">
+        <div part="overlay"></div>
+
+        <div part="content">
+          <header part="header">
+            <dialog-close-button style="display: contents">
+              <button type="button" part="close-button">
+                <span class="sr-only" part="sr-only">Close</span>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  width="10"
+                  class="icon icon-close"
+                  part="icon"
+                  fill="none"
+                  viewBox="0 0 10 10"
+                >
+                  <path stroke="currentColor" d="m1 1 8 8m0-8L1 9"></path>
+                </svg>
+              </button>
+            </dialog-close-button>
+
+            <slot name="header"></slot>
+          </header>
+
+          <div part="body">
+            <slot></slot>
+          </div>
+
+          <footer part="footer">
+            <slot name="footer"></slot>
+          </footer>
+        </div>
+      </div> </template
+    ><template id="drawer-popover-default-template">
+      <div part="base">
+        <div part="overlay"></div>
+
+        <div part="content">
+          <header part="header">
+            <dialog-close-button style="display: contents">
+              <button type="button" part="close-button">
+                <span class="sr-only" part="sr-only">Close</span>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  width="10"
+                  class="icon icon-close"
+                  part="icon"
+                  fill="none"
+                  viewBox="0 0 10 10"
+                >
+                  <path stroke="currentColor" d="m1 1 8 8m0-8L1 9"></path>
+                </svg>
+              </button>
+            </dialog-close-button>
+
+            <slot name="header"></slot>
+          </header>
+
+          <div part="body">
+            <slot></slot>
+          </div>
+        </div>
+      </div> </template
+    ><template id="modal-default-template">
+      <div part="base">
+        <div part="overlay"></div>
+
+        <div part="content">
+          <slot name="image"></slot>
+
+          <div part="body">
+            <dialog-close-button style="display: contents">
+              <button type="button" part="close-button">
+                <span class="sr-only" part="sr-only">Close</span>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  width="10"
+                  class="icon icon-close"
+                  part="icon"
+                  fill="none"
+                  viewBox="0 0 10 10"
+                >
+                  <path stroke="currentColor" d="m1 1 8 8m0-8L1 9"></path>
+                </svg>
+              </button>
+            </dialog-close-button>
+
+            <slot></slot>
+          </div>
+        </div>
+      </div> </template
+    ><template id="modal-with-header-default-template">
+      <div part="base">
+        <div part="overlay"></div>
+
+        <div part="content">
+          <header part="header">
+            <slot name="header"></slot>
+
+            <dialog-close-button style="display: contents">
+              <button type="button" part="close-button">
+                <span class="sr-only" part="sr-only">Close</span>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  width="10"
+                  class="icon icon-close"
+                  part="icon"
+                  fill="none"
+                  viewBox="0 0 10 10"
+                >
+                  <path stroke="currentColor" d="m1 1 8 8m0-8L1 9"></path>
+                </svg>
+              </button>
+            </dialog-close-button>
+          </header>
+
+          <div part="body">
+            <slot></slot>
+          </div>
+        </div>
+      </div> </template
+    ><template id="popover-default-template">
+      <div part="base">
+        <div part="overlay"></div>
+
+        <div part="content">
+          <header part="header">
+            <slot name="header"></slot>
+
+            <dialog-close-button style="display: contents">
+              <button type="button" part="close-button">
+                <span class="sr-only" part="sr-only">Close</span>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  width="10"
+                  class="icon icon-close"
+                  part="icon"
+                  fill="none"
+                  viewBox="0 0 10 10"
+                >
+                  <path stroke="currentColor" d="m1 1 8 8m0-8L1 9"></path>
+                </svg>
+              </button>
+            </dialog-close-button>
+          </header>
+
+          <div part="body">
+            <slot></slot>
+          </div>
+        </div>
+      </div> </template
+    ><template id="simple-popover-default-template">
+      <div part="base">
+        <div part="overlay"></div>
+
+        <div part="content">
+          <dialog-close-button style="display: contents">
+            <button type="button" part="close-button overlaid-close-button">
+              <span class="sr-only" part="sr-only">Close</span>
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                width="10"
+                class="icon icon-close"
+                part="icon"
+                fill="none"
+                viewBox="0 0 10 10"
+              >
+                <path stroke="currentColor" d="m1 1 8 8m0-8L1 9"></path>
+              </svg>
+            </button>
+          </dialog-close-button>
+
+          <div part="body">
+            <slot></slot>
+          </div>
+        </div>
+      </div> </template
+    ><template id="video-media-default-template">
+      <slot></slot>
+
+      <div part="play-button">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          width="12"
+          class="icon icon-play-triangle"
+          part="icon"
+          fill="none"
+          viewBox="0 0 12 17"
+        >
+          <path
+            fill="#ffffff"
+            d="M1.783 15.889A1 1 0 0 1 .2 15.076V1.148A1 1 0 0 1 1.783.335l9.71 6.964a1 1 0 0 1 0 1.626l-9.71 6.964Z"
+          ></path>
+        </svg>
+      </div> </template
+    ><loading-bar class="loading-bar" aria-hidden="true"></loading-bar>
+
+    <a href="#main" allow-hash-change="" class="skip-to-content sr-only">Skip to content</a>
+
+    <span id="header-scroll-tracker" style="position: absolute; width: 1px; height: 1px; top: 200px; left: 0"></span
+    ><!-- BEGIN sections: header-group -->
+    <header
+      id="shopify-section-sections--27417083773275__header"
+      class="shopify-section shopify-section-group-header-group shopify-section--header"
+    >
+      <style>
+        :root {
+          --header-is-sticky: 1;
+        }
+
+        #shopify-section-sections--27417083773275__header {
+          --header-grid: 'primary-nav logo secondary-nav' / minmax(0, 1fr) auto minmax(0, 1fr);
+          --header-transparent-header-text-color: 255 255 255;
+          --header-non-transparent-text-color: 0 0 0;
+          --header-separation-border-color: 0 0 0 / 0.15;
+        }
+
+        @media screen and (min-width: 1000px) {
+          #shopify-section-sections--27417083773275__header {
+            --header-grid: '. logo secondary-nav' 'primary-nav primary-nav primary-nav' / minmax(0, 1fr) auto
+              minmax(0, 1fr);
+          }
+        }
+        #shopify-section-sections--27417083773275__header {
+          position: sticky;
+          top: 0;
+        }
+
+        .shopify-section--announcement-bar ~ #shopify-section-sections--27417083773275__header {
+          top: calc(
+            var(--announcement-bar-is-sticky, 0) * var(--announcement-bar-height, 0px) +
+              var(--marquee-bar-is-sticky, 0) * var(--marquee-bar-height, 0px)
+          );
+        }
+      </style>
+
+      <height-observer variable="header">
+        <x-header class="header color-scheme color-scheme--scheme-1"
+          ><h1 class="header__logo">
+            <a href="/"><p class="header__logo-text heading">Claire Chemin</p></a>
+          </h1>
+
+          <nav class="header__primary-nav md:justify-center md:mt-4" aria-label="Primary navigation">
+            <button type="button" aria-controls="menu-drawer" class="tap-area md:hidden">
+              <span class="sr-only">Menu</span>
+
+              <div class="h-stack gap-3" aria-hidden="true">
+                <div class="header__hamburger">
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <span class="subheading max-md:hidden">Menu</span>
+              </div>
+            </button>
+            <ul class="contents unstyled-list max-md:hidden">
+              <li><a href="/" class="block subheading link-reversed" aria-current="page">Home</a></li>
+
+              <li><a href="/pages/photography" class="block subheading link-reversed">Photography</a></li>
+
+              <li><a href="/pages/art-direction" class="block subheading link-reversed">Art-direction</a></li>
+
+              <li><a href="/pages/about" class="block subheading link-reversed">About</a></li>
+
+              <li><a href="/pages/contact" class="block subheading link-reversed">Contact</a></li>
+            </ul>
+          </nav>
+          <nav class="header__secondary-nav" aria-label="Secondary navigation">
+            <ul class="contents unstyled-list">
+              <li class="header__news-link" hidden="">
+                <news-modal-button class="contents">
+                  <button class="tap-area" aria-controls="news-modal" aria-expanded="false">
+                    <span class="sr-only">News modal</span>
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      width="16"
+                      fill="none"
+                      class="icon icon-bell"
+                      part="icon"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        stroke-width="1"
+                        stroke="currentColor"
+                        d="M3.333 7v3.333L2 12.5h12l-1.333-2.167V7A4.665 4.665 0 0 0 4.7 3.7 4.667 4.667 0 0 0 3.333 7ZM6.5 15.5h3"
+                      ></path>
+                    </svg>
+                  </button>
+                </news-modal-button>
+              </li>
+              <li class="header__cart-link relative">
+                <a href="/cart" class="tap-area" data-no-instant="">
+                  <span class="sr-only">Cart</span>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="16"
+                    fill="none"
+                    class="icon icon-cart"
+                    part="icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path stroke-width="1" stroke="currentColor" d="m1.5 14.5 1-12h11l1 12h-13Z"></path>
+                    <path
+                      stroke-width="1"
+                      stroke="currentColor"
+                      d="M5.5 5c.238.833 1.071 2.5 2.5 2.5s2.262-1.667 2.5-2.5"
+                    ></path></svg
+                ></a>
+
+                <cart-count class="header__active-dot" hidden="">
+                  <span class="sr-only">0 items</span>
+                </cart-count>
+              </li>
+            </ul>
+          </nav>
+          <header-menu-drawer id="menu-drawer" class="menu-drawer color-scheme color-scheme--scheme-1">
+            <template>
+              <div part="overlay"></div>
+
+              <div part="content">
+                <slot></slot>
+              </div> </template
+            ><header-menu-drawer-panel id="menu-drawer-panel-main" data-main-panel="" class="menu-drawer__panel">
+              <div class="menu-drawer__panel-body">
+                <ul class="v-stack gap-3 faded-linklist unstyled-list">
+                  <li><a href="/" class="h4 w-full">Home</a></li>
+                  <li><a href="/pages/photography" class="h4 w-full">Photography</a></li>
+                  <li><a href="/pages/art-direction" class="h4 w-full">Art-direction</a></li>
+                  <li><a href="/pages/about" class="h4 w-full">About</a></li>
+                  <li><a href="/pages/contact" class="h4 w-full">Contact</a></li>
+                </ul>
+              </div>
+              <div class="menu-drawer__panel-footer">
+                <div class="menu-drawer__footer-item">
+                  <ul class="social-media unstyled-list" role="list">
+                    <li class="social-media__item branding-colors--instagram">
+                      <a
+                        href="https://www.instagram.com/xhmn/"
+                        class="tap-area"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Follow on Instagram"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          focusable="false"
+                          width="24"
+                          class="icon icon-instagram"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12 2.4c-2.607 0-2.934.011-3.958.058-1.022.046-1.72.209-2.33.446a4.705 4.705 0 0 0-1.7 1.107 4.706 4.706 0 0 0-1.108 1.7c-.237.611-.4 1.31-.446 2.331C2.41 9.066 2.4 9.392 2.4 12c0 2.607.011 2.934.058 3.958.046 1.022.209 1.72.446 2.33a4.706 4.706 0 0 0 1.107 1.7c.534.535 1.07.863 1.7 1.108.611.237 1.309.4 2.33.446 1.025.047 1.352.058 3.959.058s2.934-.011 3.958-.058c1.022-.046 1.72-.209 2.33-.446a4.706 4.706 0 0 0 1.7-1.107 4.706 4.706 0 0 0 1.108-1.7c.237-.611.4-1.31.446-2.33.047-1.025.058-1.352.058-3.959s-.011-2.934-.058-3.958c-.047-1.022-.209-1.72-.446-2.33a4.706 4.706 0 0 0-1.107-1.7 4.705 4.705 0 0 0-1.7-1.108c-.611-.237-1.31-.4-2.331-.446C14.934 2.41 14.608 2.4 12 2.4Zm0 1.73c2.563 0 2.867.01 3.88.056.935.042 1.443.199 1.782.33.448.174.768.382 1.104.718.336.336.544.656.718 1.104.131.338.287.847.33 1.783.046 1.012.056 1.316.056 3.879 0 2.563-.01 2.867-.056 3.88-.043.935-.199 1.444-.33 1.782a2.974 2.974 0 0 1-.719 1.104 2.974 2.974 0 0 1-1.103.718c-.339.131-.847.288-1.783.33-1.012.046-1.316.056-3.88.056-2.563 0-2.866-.01-3.878-.056-.936-.042-1.445-.199-1.783-.33a2.974 2.974 0 0 1-1.104-.718 2.974 2.974 0 0 1-.718-1.104c-.131-.338-.288-.847-.33-1.783-.047-1.012-.056-1.316-.056-3.879 0-2.563.01-2.867.056-3.88.042-.935.199-1.443.33-1.782.174-.448.382-.768.718-1.104a2.974 2.974 0 0 1 1.104-.718c.338-.131.847-.288 1.783-.33C9.133 4.14 9.437 4.13 12 4.13Zm0 11.07a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm0-8.13a4.93 4.93 0 1 0 0 9.86 4.93 4.93 0 0 0 0-9.86Zm6.276-.194a1.152 1.152 0 1 1-2.304 0 1.152 1.152 0 0 1 2.304 0Z"
+                            fill="currentColor"
+                          ></path></svg
+                      ></a>
+                    </li>
+                    <li class="social-media__item branding-colors--linkedin">
+                      <a
+                        href="https://www.linkedin.com/in/claire-chemin/"
+                        class="tap-area"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Follow on LinkedIn"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          focusable="false"
+                          width="24"
+                          class="icon icon-linkedin"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M7.349 5.478a1.875 1.875 0 1 0-3.749 0 1.875 1.875 0 1 0 3.749 0ZM7.092 19.2H3.857V8.78h3.235V19.2ZM12.22 8.78H9.121V19.2h3.228v-5.154c0-1.36.257-2.676 1.94-2.676 1.658 0 1.68 1.554 1.68 2.763V19.2H19.2v-5.715c0-2.806-.605-4.963-3.877-4.963-1.573 0-2.629.863-3.06 1.683h-.044V8.78Z"
+                            fill="currentColor"
+                          ></path></svg
+                      ></a>
+                    </li>
+                  </ul>
+                </div></div></header-menu-drawer-panel></header-menu-drawer
+        ></x-header>
+      </height-observer>
+
+      <script data-keep="">
+        document.documentElement.style.setProperty(
+          '--header-height',
+          `${Math.round(document.getElementById('shopify-section-sections--27417083773275__header').clientHeight)}px`
+        );
+      </script>
+    </header>
+    <!-- END sections: header-group --><!-- BEGIN sections: overlay-group -->
+    <aside
+      id="shopify-section-sections--27417083806043__privacy-banner"
+      class="shopify-section shopify-section-group-overlay-group shopify-section--privacy-banner"
+    >
+      <privacy-banner
+        class="modal privacy-banner color-scheme color-scheme--scheme-1"
+        handle-editor-events=""
+        overlay-lock=""
+      >
+        <template>
+          <div part="base">
+            <div part="overlay"></div>
+
+            <div part="content">
+              <div part="body">
+                <slot></slot>
+              </div>
+            </div>
+          </div>
+        </template>
+
+        <div class="v-stack">
+          <div class="v-stack gap-0">
+            <p class="h5">Ce site web utilise des cookies.</p>
+            <div class="h-stack mt-4">
+              <button type="button" class="link text-xxs text-subdued" data-action="decline">Decline</button>
+            </div>
+          </div>
+          <div class="prose text-sm mt-2">
+            <p>
+              Nous utilisons des cookies et d’autres technologies pour personnaliser votre expérience, à des fins
+              commerciales et d’analyses. Pour en savoir plus, consultez notre
+              <a href="/policies/privacy-policy" target="_blank" title="Privacy Policy"
+                >politique de confidentialité.</a
+              >
+            </p>
+          </div>
+          <div class="v-stack sm:h-stack gap-4 justify-center sm:justify-start mt-6">
+            <button
+              type="button"
+              class="button button--outline text-xs w-full"
+              aria-controls="privacy-banner"
+              data-action="show-pref"
+              style="--button-text-color: var(--button-background-primary)"
+            >
+              Settings
+            </button>
+            <button type="button" class="button text-xs w-full" data-action="accept">Accept</button>
+          </div>
+        </div>
+
+        <x-modal
+          append-to-body=""
+          show-header=""
+          id="privacy-banner"
+          class="modal modal--md modal--with-header color-scheme color-scheme--scheme-1"
+        >
+          <span class="h6" slot="header" style="--border-color: var(--text-color) / 0.15"
+            >Préférences de consentement</span
+          >
+
+          <div class="v-stack gap-4">
+            <div class="prose">
+              <p>
+                Ces cookies nous permettent de mémoriser vos préférences, telles que votre pays ou votre langue, afin de
+                personnaliser vos prochaines visites du site web.
+              </p>
+            </div>
+            <div class="checkbox-control">
+              <input
+                id="checkbox--sections--27417083806043__privacy-banner--privacy-banner--required-"
+                class="switch"
+                type="checkbox"
+                role="switch"
+                name="privacy-banner--required"
+                disabled=""
+                checked=""
+              /><label for="checkbox--sections--27417083806043__privacy-banner--privacy-banner--required-"
+                ><p>
+                  <strong>Les cookies obligatoires<br /></strong>Ces cookies sont indispensables au fonctionnement du
+                  site et aux activités nécessaires comme la protection contre la fraude.
+                </p></label
+              >
+            </div>
+            <div class="checkbox-control">
+              <input
+                id="checkbox--sections--27417083806043__privacy-banner--privacy-banner--preferences-"
+                class="switch"
+                type="checkbox"
+                role="switch"
+                name="privacy-banner--preferences"
+                checked=""
+              /><label for="checkbox--sections--27417083806043__privacy-banner--privacy-banner--preferences-"
+                ><p>
+                  <strong>Les cookies fonctionnels<br /></strong>Ces cookies sont indispensables au fonctionnement du
+                  site et aux activités nécessaires comme la protection contre la fraude.
+                </p></label
+              >
+            </div>
+            <div class="checkbox-control">
+              <input
+                id="checkbox--sections--27417083806043__privacy-banner--privacy-banner--analytics-"
+                class="switch"
+                type="checkbox"
+                role="switch"
+                name="privacy-banner--analytics"
+                checked=""
+              /><label for="checkbox--sections--27417083806043__privacy-banner--privacy-banner--analytics-"
+                ><p>
+                  <strong>Les cookies de suivi<br /></strong>Ces cookies aident à comprendre comment vous interagissez
+                  avec le site et quels types de contenu vous recherchez.
+                </p></label
+              >
+            </div>
+            <div class="checkbox-control">
+              <input
+                id="checkbox--sections--27417083806043__privacy-banner--privacy-banner--marketing-"
+                class="switch"
+                type="checkbox"
+                role="switch"
+                name="privacy-banner--marketing"
+                checked=""
+              /><label for="checkbox--sections--27417083806043__privacy-banner--privacy-banner--marketing-"
+                ><p>
+                  <strong>Les cookies marketing<br /></strong>Ces cookies sont utilisés pour afficher des publicités sur
+                  d’autres sites et des communications marketing en fonction de vos centres d’intérêt.
+                </p></label
+              >
+            </div>
+          </div>
+
+          <div class="v-stack sm:h-stack gap-4 justify-center mt-4 privacy-banner__btns">
+            <button
+              type="button"
+              class="button button--outline text-xs"
+              data-action="accept"
+              style="--button-text-color: var(--button-background-primary)"
+            >
+              Accept
+            </button>
+            <button type="button" class="button text-xs" data-action="pref-validate">Validate</button>
+          </div>
+        </x-modal>
+      </privacy-banner>
+    </aside>
+    <!-- END sections: overlay-group -->
+    <main id="main" class="anchor">
+      <section
+        id="shopify-section-template--27417084264795__impact_revealed_image_on_scroll_QrE4Jb"
+        class="shopify-section shopify-section--im-revealed-image contents"
+      >
+        <im-revealed-image class="im-revealed-image" full="">
+          <span class="im-revealed-image__scroll-tracker"></span>
+
+          <div class="im-revealed-image__scroller color-scheme color-scheme--scheme-1">
+            <div class="im-revealed-image__wrapper">
+              <div class="im-revealed-image__image-clipper">
+                <img
+                  src="//claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=2048"
+                  alt=""
+                  srcset="
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=200   200w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=300   300w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=400   400w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=500   500w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=600   600w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=700   700w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=800   800w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=900   900w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=1000 1000w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=1200 1200w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=1400 1400w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=1600 1600w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=1800 1800w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=2000 2000w
+                  "
+                  width="2048"
+                  height="1625"
+                  class="hidden md:block rounded-lg"
+                /><img
+                  src="//claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=2048"
+                  alt=""
+                  srcset="
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=200   200w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=300   300w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=400   400w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=500   500w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=600   600w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=700   700w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=800   800w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=900   900w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=1000 1000w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=1200 1200w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=1400 1400w,
+                    //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-9.jpg?v=1765713296&amp;width=1600 1600w
+                  "
+                  width="2048"
+                  height="1625"
+                  class="md:hidden rounded-lg"
+                />
+              </div>
+              <div
+                class="im-revealed-image__content im-revealed-image__content--outside prose"
+                style="--text-color: 0 0 0; color: rgb(var(--text-color)); --border-color: var(--text-color) / 0.15"
+              >
+                <div class="im-revealed-image__content-inner"><p class="h1">Claire chemin</p></div>
+              </div>
+
+              <div
+                aria-hidden="true"
+                class="im-revealed-image__content im-revealed-image__content--inside prose"
+                style="
+                  --text-color: 255 255 255;
+                  color: rgb(var(--text-color));
+                  --border-color: var(--text-color) / 0.15;
+                "
+              >
+                <div class="im-revealed-image__content-inner"><p class="h1">Claire chemin</p></div>
+              </div>
+            </div>
+          </div>
+        </im-revealed-image>
+      </section>
+      <section
+        id="shopify-section-template--27417084264795__dynamic_grid_fjpzmq"
+        class="shopify-section shopify-section--dynamic-grid"
+      >
+        <style>
+          #shopify-section-template--27417084264795__dynamic_grid_fjpzmq {
+            --dynamic-grid-explicit-row-count: max(
+              var(--dynamic-grid-mobile-row-max-track-line-ANksyOHRFc0krRklyb__dynamic_grid_item_eb8B4V, 0),
+              var(--dynamic-grid-mobile-row-max-track-line-ASGhZeTUwT3F4cHU5Y__dynamic_grid_item_AQpJfd, 0),
+              var(--dynamic-grid-mobile-row-max-track-line-AY0FHbEFGR3JEKzRxM__dynamic_grid_item_CY8xKE, 0),
+              var(--dynamic-grid-mobile-row-max-track-line-AbzZNM3FmN2xVYkp3d__dynamic_grid_item_BGyXyA, 0),
+              var(--dynamic-grid-mobile-row-max-track-line-AR2g0VkpPQXNPa3czc__dynamic_grid_item_P7dxxz, 0),
+              var(--dynamic-grid-mobile-row-max-track-line-AbVF3TWFvYldGODVRU__dynamic_grid_item_P8ihYn, 0)
+            );
+            --dynamic-grid-gap: 10px;
+          }
+
+          @media screen and (min-width: 1000px) {
+            #shopify-section-template--27417084264795__dynamic_grid_fjpzmq {
+              --dynamic-grid-explicit-row-count: max(
+                var(--dynamic-grid-desktop-row-max-track-line-ANksyOHRFc0krRklyb__dynamic_grid_item_eb8B4V, 0),
+                var(--dynamic-grid-desktop-row-max-track-line-ASGhZeTUwT3F4cHU5Y__dynamic_grid_item_AQpJfd, 0),
+                var(--dynamic-grid-desktop-row-max-track-line-AY0FHbEFGR3JEKzRxM__dynamic_grid_item_CY8xKE, 0),
+                var(--dynamic-grid-desktop-row-max-track-line-AbzZNM3FmN2xVYkp3d__dynamic_grid_item_BGyXyA, 0),
+                var(--dynamic-grid-desktop-row-max-track-line-AR2g0VkpPQXNPa3czc__dynamic_grid_item_P7dxxz, 0),
+                var(--dynamic-grid-desktop-row-max-track-line-AbVF3TWFvYldGODVRU__dynamic_grid_item_P8ihYn, 0)
+              );
+              --dynamic-grid-gap: 16px;
+            }
+          }
+        </style>
+
+        <div allow-transparent-header="" class="color-scheme color-scheme--scheme-1 overflow-hidden">
+          <div class="container pt-10 sm:pt-14 pb-10 sm:pb-14">
+            <dynamic-grid class="dynamic-grid"
+              ><div
+                id="shopify-block-AbVF3TWFvYldGODVRU__dynamic_grid_item_P8ihYn"
+                class="dynamic-grid__cell"
+                data-parallax-direction="vertical"
+                style="--parallax-speed: 0"
+              >
+                <style>
+                  #shopify-section-template--27417084264795__dynamic_grid_fjpzmq {
+                    --dynamic-grid-mobile-row-max-track-line-AbVF3TWFvYldGODVRU__dynamic_grid_item_P8ihYn: 4;
+                    --dynamic-grid-desktop-row-max-track-line-AbVF3TWFvYldGODVRU__dynamic_grid_item_P8ihYn: 2;
+                  }
+
+                  #shopify-block-AbVF3TWFvYldGODVRU__dynamic_grid_item_P8ihYn {
+                    --dynamic-grid-grid-area: 4 / 1 / -1 / 9;
+                    --dynamic-grid-horizontal-adjustment: 0vw;
+                    --dynamic-grid-vertical-adjustment: 0vw;
+                  }
+
+                  @media screen and (min-width: 1000px) {
+                    #shopify-block-AbVF3TWFvYldGODVRU__dynamic_grid_item_P8ihYn {
+                      --dynamic-grid-grid-area: 2 / 5 / -1 / 16;
+                      --dynamic-grid-horizontal-adjustment: 0vw;
+                      --dynamic-grid-vertical-adjustment: 0vw;
+                    }
+                  }
+                </style>
+                <div class="prose prose-justify-start">
+                  <style>
+                    #shopify-block-Ab3NzelZFNWRZUUZkS__dynamic_grid_heading_WtbTX7 {
+                      font-size: clamp(10px, 10vw, 80px);
+                      line-height: 1;
+                    }
+
+                    @media screen and (min-width: 1000px) {
+                      #shopify-block-Ab3NzelZFNWRZUUZkS__dynamic_grid_heading_WtbTX7 {
+                        font-size: clamp(10px, 5vw, 140px);
+                      }
+                    }
+                  </style>
+                  <p id="shopify-block-Ab3NzelZFNWRZUUZkS__dynamic_grid_heading_WtbTX7" class="heading">
+                    Write some impactful text and position it onto the grid.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                id="shopify-block-AR2g0VkpPQXNPa3czc__dynamic_grid_item_P7dxxz"
+                class="dynamic-grid__cell"
+                data-parallax-direction="vertical"
+                style="--parallax-speed: 0"
+              >
+                <style>
+                  #shopify-section-template--27417084264795__dynamic_grid_fjpzmq {
+                    --dynamic-grid-mobile-row-max-track-line-AR2g0VkpPQXNPa3czc__dynamic_grid_item_P7dxxz: 8;
+                    --dynamic-grid-desktop-row-max-track-line-AR2g0VkpPQXNPa3czc__dynamic_grid_item_P7dxxz: 3;
+                  }
+
+                  #shopify-block-AR2g0VkpPQXNPa3czc__dynamic_grid_item_P7dxxz {
+                    --dynamic-grid-grid-area: 8 / 6 / -1 / 9;
+                    --dynamic-grid-horizontal-adjustment: 0vw;
+                    --dynamic-grid-vertical-adjustment: 0vw;
+                  }
+
+                  @media screen and (min-width: 1000px) {
+                    #shopify-block-AR2g0VkpPQXNPa3czc__dynamic_grid_item_P7dxxz {
+                      --dynamic-grid-grid-area: 3 / 12 / -1 / 15;
+                      --dynamic-grid-horizontal-adjustment: 0vw;
+                      --dynamic-grid-vertical-adjustment: 0vw;
+                    }
+                  }
+                </style>
+                <div class="prose prose-justify-start"></div>
+              </div>
+
+              <div
+                id="shopify-block-AbzZNM3FmN2xVYkp3d__dynamic_grid_item_BGyXyA"
+                class="dynamic-grid__cell"
+                data-parallax-direction="vertical"
+                style="--parallax-speed: 0"
+              >
+                <style>
+                  #shopify-section-template--27417084264795__dynamic_grid_fjpzmq {
+                    --dynamic-grid-mobile-row-max-track-line-AbzZNM3FmN2xVYkp3d__dynamic_grid_item_BGyXyA: 12;
+                    --dynamic-grid-desktop-row-max-track-line-AbzZNM3FmN2xVYkp3d__dynamic_grid_item_BGyXyA: 3;
+                  }
+
+                  #shopify-block-AbzZNM3FmN2xVYkp3d__dynamic_grid_item_BGyXyA {
+                    --dynamic-grid-grid-area: 12 / 1 / -1 / 4;
+                    --dynamic-grid-horizontal-adjustment: 0vw;
+                    --dynamic-grid-vertical-adjustment: 0vw;
+                  }
+
+                  @media screen and (min-width: 1000px) {
+                    #shopify-block-AbzZNM3FmN2xVYkp3d__dynamic_grid_item_BGyXyA {
+                      --dynamic-grid-grid-area: 3 / 1 / -1 / 4;
+                      --dynamic-grid-horizontal-adjustment: 0vw;
+                      --dynamic-grid-vertical-adjustment: 0vw;
+                    }
+                  }
+                </style>
+                <div class="prose prose-justify-start"></div>
+              </div>
+
+              <div
+                id="shopify-block-AY0FHbEFGR3JEKzRxM__dynamic_grid_item_CY8xKE"
+                class="dynamic-grid__cell"
+                data-parallax-direction="vertical"
+                style="--parallax-speed: 0"
+              >
+                <style>
+                  #shopify-section-template--27417084264795__dynamic_grid_fjpzmq {
+                    --dynamic-grid-mobile-row-max-track-line-AY0FHbEFGR3JEKzRxM__dynamic_grid_item_CY8xKE: 1;
+                    --dynamic-grid-desktop-row-max-track-line-AY0FHbEFGR3JEKzRxM__dynamic_grid_item_CY8xKE: 1;
+                  }
+
+                  #shopify-block-AY0FHbEFGR3JEKzRxM__dynamic_grid_item_CY8xKE {
+                    --dynamic-grid-grid-area: 1 / 6 / -1 / 9;
+                    --dynamic-grid-horizontal-adjustment: 0vw;
+                    --dynamic-grid-vertical-adjustment: 0vw;
+                  }
+
+                  @media screen and (min-width: 1000px) {
+                    #shopify-block-AY0FHbEFGR3JEKzRxM__dynamic_grid_item_CY8xKE {
+                      --dynamic-grid-grid-area: 1 / 15 / -1 / 17;
+                      --dynamic-grid-horizontal-adjustment: 0vw;
+                      --dynamic-grid-vertical-adjustment: 0vw;
+                    }
+                  }
+                </style>
+                <div class="prose prose-justify-start"></div>
+              </div>
+
+              <div
+                id="shopify-block-ASGhZeTUwT3F4cHU5Y__dynamic_grid_item_AQpJfd"
+                class="dynamic-grid__cell"
+                data-parallax-direction="vertical"
+                style="--parallax-speed: 0"
+              >
+                <style>
+                  #shopify-section-template--27417084264795__dynamic_grid_fjpzmq {
+                    --dynamic-grid-mobile-row-max-track-line-ASGhZeTUwT3F4cHU5Y__dynamic_grid_item_AQpJfd: 1;
+                    --dynamic-grid-desktop-row-max-track-line-ASGhZeTUwT3F4cHU5Y__dynamic_grid_item_AQpJfd: 1;
+                  }
+
+                  #shopify-block-ASGhZeTUwT3F4cHU5Y__dynamic_grid_item_AQpJfd {
+                    --dynamic-grid-grid-area: 1 / 1 / -1 / 3;
+                    --dynamic-grid-horizontal-adjustment: 0vw;
+                    --dynamic-grid-vertical-adjustment: 0vw;
+                  }
+
+                  @media screen and (min-width: 1000px) {
+                    #shopify-block-ASGhZeTUwT3F4cHU5Y__dynamic_grid_item_AQpJfd {
+                      --dynamic-grid-grid-area: 1 / 3 / -1 / 5;
+                      --dynamic-grid-horizontal-adjustment: 0vw;
+                      --dynamic-grid-vertical-adjustment: 0vw;
+                    }
+                  }
+                </style>
+                <div class="prose prose-justify-start"></div>
+              </div>
+
+              <div
+                id="shopify-block-ANksyOHRFc0krRklyb__dynamic_grid_item_eb8B4V"
+                class="dynamic-grid__cell"
+                data-parallax-direction="vertical"
+                style="--parallax-speed: 0"
+              >
+                <style>
+                  #shopify-section-template--27417084264795__dynamic_grid_fjpzmq {
+                    --dynamic-grid-mobile-row-max-track-line-ANksyOHRFc0krRklyb__dynamic_grid_item_eb8B4V: 9;
+                    --dynamic-grid-desktop-row-max-track-line-ANksyOHRFc0krRklyb__dynamic_grid_item_eb8B4V: 6;
+                  }
+
+                  #shopify-block-ANksyOHRFc0krRklyb__dynamic_grid_item_eb8B4V {
+                    --dynamic-grid-grid-area: 9 / 1 / -1 / 7;
+                    --dynamic-grid-horizontal-adjustment: 0vw;
+                    --dynamic-grid-vertical-adjustment: 0vw;
+                  }
+
+                  @media screen and (min-width: 1000px) {
+                    #shopify-block-ANksyOHRFc0krRklyb__dynamic_grid_item_eb8B4V {
+                      --dynamic-grid-grid-area: 6 / 6 / -1 / 13;
+                      --dynamic-grid-horizontal-adjustment: 0vw;
+                      --dynamic-grid-vertical-adjustment: 0vw;
+                    }
+                  }
+                </style>
+                <div class="prose prose-justify-center">
+                  <div class="max-w-sm">
+                    <p>
+                      Use this text area to tell your customers about your brand and vision. You can change it in the
+                      theme editor, and position it easily onto the grid.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </dynamic-grid>
+          </div>
+        </div>
+      </section>
+      <section
+        id="shopify-section-template--27417084264795__multi_column_XD4377"
+        class="shopify-section shopify-section--multi-column"
+      >
+        <style>
+          #shopify-section-template--27417084264795__multi_column_XD4377 {
+            --multi-column-grid: auto-flow / minmax(0, 1fr);
+            --multi-column-column-count: 3;
+            --multi-column-column-gap: calc(var(--container-gutter) / 2);
+            --multi-column-row-gap: calc(var(--container-gutter) / 2);
+          }
+
+          @media screen and (min-width: 700px) {
+            #shopify-section-template--27417084264795__multi_column_XD4377 {
+              --multi-column-grid: auto-flow / minmax(0, 1fr);
+            }
+          }
+
+          @media screen and (min-width: 1000px) {
+            #shopify-section-template--27417084264795__multi_column_XD4377 {
+              --multi-column-grid: auto-flow / repeat(3, minmax(0, 1fr));
+            }
+          }
+          #shopify-section-template--27417084264795__multi_column_XD4377
+            .multi-column__item:not(.color-scheme--scheme-1) {
+            padding: 1rem;
+            border-radius: var(--radius-lg);
+          }
+        </style>
+
+        <div class="color-scheme color-scheme--scheme-1">
+          <div class="container pt-10 sm:pt-14 pb-10 sm:pb-14">
+            <div class="section-stack">
+              <div class="section-header">
+                <div class="prose prose-justify-left">
+                  <h2 id="shopify-block-ASzU3M0FHT25FSHdzZ__section-header" class="h3 sm:h2">Multi-column</h2>
+                  <div class="max-w-md">
+                    <p>Use this content to share information about your store and products.</p>
+                  </div>
+                </div>
+              </div>
+              <scroll-carousel
+                id="template--27417084264795__multi_column_XD4377-carousel"
+                class="multi-column scroll-area snap-x bleed"
+                ><div class="multi-column__item color-scheme color-scheme--scheme-1 group snap-start">
+                  <div class="prose prose-justify-left prose--compact">
+                    <img
+                      src="//claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=1365"
+                      alt=""
+                      srcset="
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=200   200w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=300   300w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=400   400w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=500   500w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=600   600w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=700   700w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=800   800w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=1000 1000w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=1200 1200w
+                      "
+                      width="1365"
+                      height="2048"
+                      loading="lazy"
+                      sizes="auto, 100vw"
+                      class="rounded-lg constrained-image"
+                      style="--image-max-width: 100%; --image-mobile-max-width: 100%"
+                    />
+                    <p id="shopify-block-ASDFENVZLcy9ycGZmc__heading_mfkYbV" class="h3 sm:h4">Column 1</p>
+                  </div>
+                </div>
+                <div class="multi-column__item color-scheme color-scheme--scheme-1 group snap-start">
+                  <div class="prose prose-justify-left prose--compact">
+                    <img
+                      src="//claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=1365"
+                      alt=""
+                      srcset="
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=200   200w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=300   300w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=400   400w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=500   500w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=600   600w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=700   700w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=800   800w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=1000 1000w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=1200 1200w
+                      "
+                      width="1365"
+                      height="2048"
+                      loading="lazy"
+                      sizes="auto, 100vw"
+                      class="rounded-lg constrained-image"
+                      style="--image-max-width: 100%; --image-mobile-max-width: 100%"
+                    />
+                    <p id="shopify-block-ATXJlSThweUQzQjBMU__heading_B8ixyC" class="h3 sm:h4">Column 1</p>
+                  </div>
+                </div>
+                <div class="multi-column__item color-scheme color-scheme--scheme-1 group snap-start">
+                  <div class="prose prose-justify-left prose--compact">
+                    <img
+                      src="//claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=1365"
+                      alt=""
+                      srcset="
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=200   200w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=300   300w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=400   400w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=500   500w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=600   600w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=700   700w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=800   800w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=1000 1000w,
+                        //claire-chemin.myshopify.com/cdn/shop/files/claire_chemin_sabah-7.jpg?v=1765713295&amp;width=1200 1200w
+                      "
+                      width="1365"
+                      height="2048"
+                      loading="lazy"
+                      sizes="auto, 100vw"
+                      class="rounded-lg constrained-image"
+                      style="--image-max-width: 100%; --image-mobile-max-width: 100%"
+                    />
+                    <p id="shopify-block-AS0ZFc21naFRUM01YR__heading_DJhWDt" class="h3 sm:h4">Column 1</p>
+                  </div>
+                </div></scroll-carousel
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- BEGIN sections: footer-group -->
+    <footer
+      id="shopify-section-sections--27417083740507__footer"
+      class="shopify-section shopify-section-group-footer-group shopify-section--footer"
+    >
+      <div class="footer color-scheme color-scheme--scheme-3">
+        <div class="container">
+          <div class="footer__content">
+            <div class="footer__block-list">
+              <div class="footer__block footer__block--links">
+                <div class="v-stack gap-4.5">
+                  <ul class="v-stack gap-2.5 unstyled-list" role="list">
+                    <li>
+                      <a href="/pages/about" class="link-reversed link-tap-area">About</a>
+                    </li>
+                    <li>
+                      <a href="/pages/contact" class="link-reversed link-tap-area">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__block footer__block--text">
+                <div class="v-stack gap-4.5">
+                  <div class="prose">
+                    <p>
+                      Use this text area to tell your customers about your brand and vision. You can change it in the
+                      theme editor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="separator full-bleed" />
+
+          <div class="footer__aside">
+            <ul class="social-media unstyled-list" role="list">
+              <li class="social-media__item branding-colors--instagram">
+                <a
+                  href="https://www.instagram.com/xhmn/"
+                  class="tap-area"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Follow on Instagram"
+                >
+                  <svg aria-hidden="true" focusable="false" width="24" class="icon icon-instagram" viewBox="0 0 24 24">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 2.4c-2.607 0-2.934.011-3.958.058-1.022.046-1.72.209-2.33.446a4.705 4.705 0 0 0-1.7 1.107 4.706 4.706 0 0 0-1.108 1.7c-.237.611-.4 1.31-.446 2.331C2.41 9.066 2.4 9.392 2.4 12c0 2.607.011 2.934.058 3.958.046 1.022.209 1.72.446 2.33a4.706 4.706 0 0 0 1.107 1.7c.534.535 1.07.863 1.7 1.108.611.237 1.309.4 2.33.446 1.025.047 1.352.058 3.959.058s2.934-.011 3.958-.058c1.022-.046 1.72-.209 2.33-.446a4.706 4.706 0 0 0 1.7-1.107 4.706 4.706 0 0 0 1.108-1.7c.237-.611.4-1.31.446-2.33.047-1.025.058-1.352.058-3.959s-.011-2.934-.058-3.958c-.047-1.022-.209-1.72-.446-2.33a4.706 4.706 0 0 0-1.107-1.7 4.705 4.705 0 0 0-1.7-1.108c-.611-.237-1.31-.4-2.331-.446C14.934 2.41 14.608 2.4 12 2.4Zm0 1.73c2.563 0 2.867.01 3.88.056.935.042 1.443.199 1.782.33.448.174.768.382 1.104.718.336.336.544.656.718 1.104.131.338.287.847.33 1.783.046 1.012.056 1.316.056 3.879 0 2.563-.01 2.867-.056 3.88-.043.935-.199 1.444-.33 1.782a2.974 2.974 0 0 1-.719 1.104 2.974 2.974 0 0 1-1.103.718c-.339.131-.847.288-1.783.33-1.012.046-1.316.056-3.88.056-2.563 0-2.866-.01-3.878-.056-.936-.042-1.445-.199-1.783-.33a2.974 2.974 0 0 1-1.104-.718 2.974 2.974 0 0 1-.718-1.104c-.131-.338-.288-.847-.33-1.783-.047-1.012-.056-1.316-.056-3.879 0-2.563.01-2.867.056-3.88.042-.935.199-1.443.33-1.782.174-.448.382-.768.718-1.104a2.974 2.974 0 0 1 1.104-.718c.338-.131.847-.288 1.783-.33C9.133 4.14 9.437 4.13 12 4.13Zm0 11.07a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm0-8.13a4.93 4.93 0 1 0 0 9.86 4.93 4.93 0 0 0 0-9.86Zm6.276-.194a1.152 1.152 0 1 1-2.304 0 1.152 1.152 0 0 1 2.304 0Z"
+                      fill="currentColor"
+                    ></path></svg
+                ></a>
+              </li>
+              <li class="social-media__item branding-colors--linkedin">
+                <a
+                  href="https://www.linkedin.com/in/claire-chemin/"
+                  class="tap-area"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Follow on LinkedIn"
+                >
+                  <svg aria-hidden="true" focusable="false" width="24" class="icon icon-linkedin" viewBox="0 0 24 24">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.349 5.478a1.875 1.875 0 1 0-3.749 0 1.875 1.875 0 1 0 3.749 0ZM7.092 19.2H3.857V8.78h3.235V19.2ZM12.22 8.78H9.121V19.2h3.228v-5.154c0-1.36.257-2.676 1.94-2.676 1.658 0 1.68 1.554 1.68 2.763V19.2H19.2v-5.715c0-2.806-.605-4.963-3.877-4.963-1.573 0-2.629.863-3.06 1.683h-.044V8.78Z"
+                      fill="currentColor"
+                    ></path></svg
+                ></a>
+              </li>
+            </ul>
+            <div class="v-stack gap-3"><p class="text-sm sm:text-start">© 2025 - Claire Chemin</p></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END sections: footer-group --><x-toast class="toast mt-2"> </x-toast>
+  </body>
+</html>
